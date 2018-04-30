@@ -1,0 +1,42 @@
+class Student ()
+{
+  protected:
+    std::string name;
+    int ID;
+    float gpa;
+    int x;
+    int y;
+  public:
+    Student(std::string name, int ID, float gpa);
+    void Displayinfo();
+    void set_gpa (float gpa);
+    float get_gpa();
+    float operator -(const& Student)
+};
+
+class Location{
+  private:
+    int x;
+    int y;
+  public:
+    void setx (int x);
+    void sety (int y);
+    int getx();
+    int gety();
+};
+
+void Student::set_gpa(float sgpa){
+gpa = sgpa;
+}
+
+class Gradstudent: public Student{
+private:
+  bool isOnProbation;
+public:
+}
+
+void Student::Student(std::string name, int ID, float gpa, Location loc){
+this->ID = ID;
+this->set_gpa(gpa);
+}
+// could test on any of the previous material so far.

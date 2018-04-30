@@ -1,0 +1,18 @@
+1.	sudo apt install git 	//install's GitHub onto Linux
+
+2.	log into GitHub in your internet browser, create a new repository on their website
+
+3.	git clone https://github.com/<userName>/<repositoryName>	//if you want to copy to linux
+
+4. 	git init 	//initializes the current working directory as a repository
+
+5.	git add .	//add the files and folders in the current directory to a queue
+
+6.	git commit -m "Your commit notes here"		//files and folders are now ready to go online
+
+7.	git remote add origin https://github.com/<userName>/<repositoryName>
+	// tells Linux which repository to upload your stuff to
+
+8.	git push origin master		//actually uploads the files to GitHub
+
+9.	Enter username and password

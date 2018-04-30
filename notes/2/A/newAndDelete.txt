@@ -1,0 +1,41 @@
+/*
+-3 types of Memory Allocation:
+	Static- lives for the duration your program is running
+	Automatic- lives completely inside a function
+	Dynamic:
+		-Size doesn't need to be completely determined
+		 before compile time
+		-Allocated and de-allocation does not happen
+		 automatically (like it does with the other two)
+		-A few examples of when you need it:
+			-want to store someone's name, but don't
+			 know how long it is before they enter it
+			-want to create a game with a variable
+			 number of monsters that changes over time
+		-dynamic memory makes sure we aren't wasting more
+		 space that is simply unused when we try to guess
+		-it also:
+			-reduces complexity
+			-stack overflow is pretty easy in a program,
+			 so we prevent it by using dynamic memory
+			-prevent artificial limitations and/or
+			 array overflows
+		-What's the point?
+			-Dynamic memory allocation is a way for
+			 running programs to request memory from
+			 the operating system when needed.
+			-The STACK is relatively small in size (<=4MB)
+			-But Dynamically Allocated Memory comes from
+			 the HEAP, which is a much larger pool of
+			 memory.  By contrast, the HEAP can possibly
+			 be GB in size.
+-----------------------------------------------------------------------------
+-How do you do this in C++?
+	-The "new" operator handles this for us.
+	-examples:
+int *ptr1 = new int (5); // use direct initialization
+int *ptr2 = new int { 6 }; // use uniform initialization
+// assume ptr has previously been allocated with operator new
+delete ptr; // return the memory pointed to by ptr to the operating system
+ptr = 0; // set ptr to be a null pointer (use nullptr instead of 0 in C++11)
+*/

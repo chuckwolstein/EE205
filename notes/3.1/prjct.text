@@ -1,0 +1,7 @@
+ncurses --> graphic interface
+SDL --> graphic interface
+As long as you're doing C++ and object-orienting
+
+-file io
+-implementing all in text is okay too
+-don't need graphic interface necessarily

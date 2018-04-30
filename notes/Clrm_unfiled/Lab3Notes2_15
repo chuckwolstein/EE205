@@ -1,0 +1,12 @@
+append(1); //inserts 1 into the array
+
+
+//for task 3, list constructor should have two parameters:
+  initialize head, initialize length
+  no capacity.... capacity is edited automatically as you go
+  initialize to be empty
+
+  List::List() :
+    head(nullptr),
+    length(0){}
+    

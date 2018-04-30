@@ -1,0 +1,61 @@
+/*
+Segments of memory:  
+
+	-Code segment--> where the compiled program sits in memory
+	-bss segment --> zero-initialized global and static variables are stored
+			 here.
+	-data segment--> initialized global and static varibles are stored here
+	-heap	--> dynamically-allocated variables are allocated from here
+	-stack --> function parameters, local variables, and other function-
+	  	   related info is stored here.i
+
+
+The heap segment:
+
+	-"new" and "delete" deal with this segment
+	-after a dynamically allocated variable is deleted,
+	 the memory is “returned” to the heap and can then be reassigned
+	 as future allocation requests are received	
+        -Because the heap is a big pool of memory, large arrays,
+	 structures, or classes can be allocated here.
+
+The call STACK:
+	What is does:
+		- keeps track of all the active functions
+		- handles allocation of all function parameters
+		  and local variables
+	Data Structure:
+		-A data structure is a programming mechanism for
+		 organizing data so that it can be used efficiently.
+		-ex:  array, struct
+		-A STACK is ALSO a data structure!!
+			-but where an array lets you access and modify elements
+			 in any order (called random access), the stack does
+			 not allow this.  You can either:
+				1. Look at the top item using top() or peek()
+				2. Take an item off using pop()
+				3. Put an item on top using push()
+		-In C++, when an application starts, main() is pushed onto
+		 the top of the stack by the OS
+		-The items we push and pop on the stack are called
+		 STACK FRAMES
+		-The STACK POINTER keeps track of there the top of the
+		 call stack is currently located
+		-However, when we pop an item off the stack, we don't have
+		 to erase it.  It can just be left alone and will be
+		 overwritten during the next push
+		-when the call stack encounters a function call, a STACK FRAME
+		 is created and pushed onto the stack
+			-within the frame is a RETURN ADDRESS, which tells the
+			 CPU where to return after the function exits
+			-once the function ends, the stack frame gets
+			 popped off the stack
+	Stack Overflow:
+		-Stack overflow happens when all the memory in the 
+		 stack has been allocated
+		-further allocations begin overflowing into other
+		 sections of memory
+		-generally the result of allocating too many variables
+		 on the stack (or too many nested functions)
+		-usually results in the program crashing
+*/

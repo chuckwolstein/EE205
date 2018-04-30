@@ -1,0 +1,6 @@
+-Shared
+  -static
+  -dynamic
+-conceptually, libraries are no different than object .o files
+-in linux, .a is an archive of .o files
+-souce-->compiler turns this into object-->linker turns into executable

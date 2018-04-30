@@ -1,0 +1,29 @@
+/*
+
+void doSomething()
+{
+    int *ptr = new int;
+}
+
+-Because pointers follow all of the same rules as
+ normal variables, when the function ends, ptr
+ will go out of scope.
+-When ptr is destroyed there are no more references
+ to the dynamically allocated memory.
+-Since the program has now lost the address, it can
+ longer delete the integer it's pointing to.
+-This is called a MEMORY LEAK.
+-The OS thinks your computer still needs that memory,
+ so the OS can't use the memory ever again
+-Only after your program terminates can the OS run
+ a clean-up operation and reclaim the leaked memory
+ --**all of this can be avoided by ensuring you delete
+     the pointer before reassigning or terminating the
+     program:
+
+int value = 5;
+int *ptr = new int; // allocate memory
+delete ptr; // return memory back to operating system
+ptr = &value; // reassign pointer to address of value
+
+*/

@@ -1,0 +1,13 @@
+/*
+in unix command prompt, type:  vim ~/.vimrc
+
+--useful things to put into config file:
+
+set number " show line numbers
+set cursorline " highlight current line                                                                                                                                                                                                            2 set cursorline " highlight current line
+colorscheme murphy " my favorite colorscheme
+syntax on
+set tabstop=4       " number of visual spaces per TAB
+set softtabstop=4   " number of spaces in tab when editing
+set showmatch           " highlight matching [{()}]
+*/

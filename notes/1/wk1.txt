@@ -1,0 +1,19 @@
+Week 1 Notes
+
+C:  cc hello.c; gcc hello.c; cc main.c functions.h; cc main.c function.h -o program
+C++:	g++ hello.cpp; g++ main.cpp function.h
+i
+
+/*IOSTREAM AND STD NAMESPACE*/
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    cout << "Hello, World!"<<endl; //C++ newline
+
+    return 0;
+}
+
+

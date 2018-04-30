@@ -1,0 +1,10 @@
+VECTORS
+// declaring a VECTOR and VECTOR OPERATIONS
+
+vector<double> v(3,4.0);
+cout << v.capactiy() << ' ' << v.size() << endl
+     << v.reserve(6)
+     << v.capacity() << ' ' << v.size() << endl
+OUTPUT:
+3 3
+6 3
